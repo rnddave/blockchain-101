@@ -57,3 +57,24 @@ console.log('Gross Salary: ', grossSalary)
 console.log('Deductions: ', deductions)
 console.log('Net Salary: ', netSalary)
 console.log('Monthly Taky Home: ', monthTakeHome)
+
+console.log('----- while loops - part 1 ----')
+
+let loopA = 1
+
+while (loopA <= 10) {
+    console.log(loopA)
+    loopA ++
+}
+
+console.log('----- for loops  part 1----')
+
+for ( let forA = 1; forA <= 10; forA++) {
+    console.log(forA)
+}
+
+console.log('----- for loops  part 2----')
+
+for (let i=1; i <= 10; i++) {
+    console.log(2, 'x', i, '=', 2*i)
+}
