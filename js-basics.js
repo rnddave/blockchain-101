@@ -105,3 +105,39 @@ function sumItUp(x, y){
 }
 
 console.log(sumItUp(4,7))
+
+console.log('----- functions part 4 ----')
+
+
+function tax(grossSalary2){
+    if (grossSalary2 > 39000) {
+        deductions2 = grossSalary2 * 0.27
+    }
+    else {
+        deductions2 = grossSalary2 * 0.23
+    }
+
+    return deductions2
+}
+
+let employeeName2 = 'David'
+let grossSalary2 = 38000
+
+let netSalary2 = grossSalary2 - tax(grossSalary2)
+let monthTakeHome2 = netSalary2 / 12
+
+console.log('Employee: ', employeeName2)
+console.log('Gross Salary: ', grossSalary2)
+console.log('Deductions: ', deductions2)
+console.log('Net Salary: ', netSalary2)
+console.log('Monthly Taky Home: ', monthTakeHome2)
+
+console.log('----- functions part 5 ----')
+
+function WelcomeMessage(name='this is default'){
+    console.log('..........')
+    console.log('welcome', name)
+    console.log('..........')
+}
+console.log(WelcomeMessage())
+console.log(WelcomeMessage('david'))
