@@ -31,3 +31,17 @@ console.log('Gross Salary: ', grossSalary)
 console.log('Deductions: ', deductions)
 console.log('Net Salary: ', netSalary)
 console.log('Monthly Taky Home: ', monthTakeHome)
+
+console.log('-----conditional operators ----')
+
+temp = 13
+
+if (temp > 26) {
+    console.log("it's hot")
+}
+else if (temp > 21 && temp < 27) {
+    console.log('the temp is good')
+}
+else {
+    console.log('it is cold')
+}
