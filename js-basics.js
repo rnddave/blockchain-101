@@ -78,3 +78,11 @@ console.log('----- for loops  part 2----')
 for (let i=1; i <= 10; i++) {
     console.log(2, 'x', i, '=', 2*i)
 }
+
+console.log('----- functions part 1----')
+
+function test() {
+    console.log(' this is a test function')
+}
+
+console.log(test())
