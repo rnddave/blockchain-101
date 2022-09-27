@@ -86,3 +86,22 @@ function test() {
 }
 
 console.log(test())
+
+console.log('----- functions part 2 ----')
+
+function timesTable(){
+    for (let i=1; i <= 10; i++) {
+        console.log(2, 'x', i, '=', 2*i)
+    }
+}
+
+console.log(timesTable())
+
+
+console.log('----- functions part 3 ----')
+
+function sumItUp(x, y){
+    console.log('the answer is: ', x+y)
+}
+
+console.log(sumItUp(4,7))
