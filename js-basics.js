@@ -19,18 +19,7 @@ let nonNumeric = 'david'
 let numeric = -1.2
 console.log(nonNumeric, numeric)
 
-console.log('-----pay-slip example - 2----')
 
-let employeeName = 'David'
-let grossSalary = 38000
-let deductions = grossSalary * 0.23
-let netSalary = grossSalary - deductions
-let monthTakeHome = netSalary / 12
-console.log('Employee: ', employeeName)
-console.log('Gross Salary: ', grossSalary)
-console.log('Deductions: ', deductions)
-console.log('Net Salary: ', netSalary)
-console.log('Monthly Taky Home: ', monthTakeHome)
 
 console.log('-----conditional operators ----')
 
@@ -45,3 +34,26 @@ else if (temp > 21 && temp < 27) {
 else {
     console.log('it is cold')
 }
+
+console.log('-----pay-slip example - 3----')
+
+let employeeName = 'David'
+let grossSalary = 38000
+let deductions = 0
+
+if (grossSalary > 39000) {
+    deductions = grossSalary * 0.27
+}
+else {
+    deductions = grossSalary * 0.23
+}
+
+let netSalary = grossSalary - deductions
+let monthTakeHome = netSalary / 12
+
+
+console.log('Employee: ', employeeName)
+console.log('Gross Salary: ', grossSalary)
+console.log('Deductions: ', deductions)
+console.log('Net Salary: ', netSalary)
+console.log('Monthly Taky Home: ', monthTakeHome)
