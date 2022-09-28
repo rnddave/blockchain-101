@@ -42,4 +42,19 @@ contract BankContract{
         }
         
     }
+
+    
+}
+
+contract MainContract{
+    function getEther() payable public{}
+    //note this is all you need to receive ethers/alternative 
+    // the ether paid, is owned by the contract, doesn't go to who created the smart contract
+
+    function checkBalance() public view returns(uint) {
+        return address(this).balance / 1 ether;
+        // we don't know the address, so we use address(this)
+        // the balance by defaul is shown in Wei, so we use / 1 ether to make it a bit easier to read 
+
+    }
 }
