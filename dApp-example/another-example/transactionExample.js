@@ -42,3 +42,9 @@ let Web3Class = require("web3");
 let web3Object=new Web3Class(new Web3Class.providers.HttpProvider("HTTP://127.0.0.1:8545"))
 
 let contract = new web3Object.eth.Contract(ABI,contractAddress)
+
+let fromAddress = "0x7a79539807CFC33FDB510CdC032d0fa16691A726"
+let data = 7
+
+contract.methods.storeData2(data).send({from:fromAddress})
+
