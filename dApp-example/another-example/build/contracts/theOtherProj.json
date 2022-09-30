@@ -1,5 +1,5 @@
 {
-  "contractName": "Friday",
+  "contractName": "theOtherProj",
   "abi": [
     {
       "inputs": [],
@@ -32,12 +32,13 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"showData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"a\",\"type\":\"uint256\"}],\"name\":\"storeData2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"storeDate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/friday.sol\":\"Friday\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/friday.sol\":{\"keccak256\":\"0x3f25602261c2687aeb91094402df9f23a84efa2d3d2ecefe26d34c90bc7021c4\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://115f225d464e13b2173934c3a326bf7aa00374e1da01cc717d8ba0cabf9ba0fe\",\"dweb:/ipfs/QmUZiRVUGmFy1ue3wUwm6haLLa9shofMmhcR4LE3xZ6NBe\"]}},\"version\":1}",
-  "bytecode": "0x60806040526000805534801561001457600080fd5b5061016f806100246000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635492bcb514610046578063af40a98f14610062578063bca02ea81461006c575b600080fd5b610060600480360381019061005b91906100bc565b61008a565b005b61006a610094565b005b61007461009e565b60405161008191906100f8565b60405180910390f35b8060008190555050565b6063600081905550565b60008054905090565b6000813590506100b681610122565b92915050565b6000602082840312156100d2576100d161011d565b5b60006100e0848285016100a7565b91505092915050565b6100f281610113565b82525050565b600060208201905061010d60008301846100e9565b92915050565b6000819050919050565b600080fd5b61012b81610113565b811461013657600080fd5b5056fea26469706673582212206d5225a35a8bebe2f33595f8c12d9879dcf3c8a321fd0d16867d00bbda8c6e2164736f6c63430008070033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635492bcb514610046578063af40a98f14610062578063bca02ea81461006c575b600080fd5b610060600480360381019061005b91906100bc565b61008a565b005b61006a610094565b005b61007461009e565b60405161008191906100f8565b60405180910390f35b8060008190555050565b6063600081905550565b60008054905090565b6000813590506100b681610122565b92915050565b6000602082840312156100d2576100d161011d565b5b60006100e0848285016100a7565b91505092915050565b6100f281610113565b82525050565b600060208201905061010d60008301846100e9565b92915050565b6000819050919050565b600080fd5b61012b81610113565b811461013657600080fd5b5056fea26469706673582212206d5225a35a8bebe2f33595f8c12d9879dcf3c8a321fd0d16867d00bbda8c6e2164736f6c63430008070033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"showData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"a\",\"type\":\"uint256\"}],\"name\":\"storeData2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"storeDate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/theOtherProj.sol\":\"theOtherProj\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/theOtherProj.sol\":{\"keccak256\":\"0xbc4a6398b3d5f5f95dfdba69d994e8239705d03b6c3396f523ef9491316e9f2e\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://9e8bcdf301788b8dcd14cf7f344da86d0a480bedb0728366bd013705f555213c\",\"dweb:/ipfs/QmdkAEA81AWBcACLX4RpATVBdcU1UwD7VDvCMkQo7gxpY5\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b5061016f806100246000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635492bcb514610046578063af40a98f14610062578063bca02ea81461006c575b600080fd5b610060600480360381019061005b91906100bc565b61008a565b005b61006a610094565b005b61007461009e565b60405161008191906100f8565b60405180910390f35b8060008190555050565b6063600081905550565b60008054905090565b6000813590506100b681610122565b92915050565b6000602082840312156100d2576100d161011d565b5b60006100e0848285016100a7565b91505092915050565b6100f281610113565b82525050565b600060208201905061010d60008301846100e9565b92915050565b6000819050919050565b600080fd5b61012b81610113565b811461013657600080fd5b5056fea264697066735822122077a0e4d51e5051add1bd8ce58aded39034e2344ce2a825c998f4c2aa68cc9c4764736f6c63430008070033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635492bcb514610046578063af40a98f14610062578063bca02ea81461006c575b600080fd5b610060600480360381019061005b91906100bc565b61008a565b005b61006a610094565b005b61007461009e565b60405161008191906100f8565b60405180910390f35b8060008190555050565b6063600081905550565b60008054905090565b6000813590506100b681610122565b92915050565b6000602082840312156100d2576100d161011d565b5b60006100e0848285016100a7565b91505092915050565b6100f281610113565b82525050565b600060208201905061010d60008301846100e9565b92915050565b6000819050919050565b600080fd5b61012b81610113565b811461013657600080fd5b5056fea264697066735822122077a0e4d51e5051add1bd8ce58aded39034e2344ce2a825c998f4c2aa68cc9c4764736f6c63430008070033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -746,14 +747,14 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "64:292:0:-:0;;;115:1;93:23;;64:292;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "64:292:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;199:66;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;125;;;:::i;:::-;;273:80;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;199:66;256:1;247:6;:10;;;;199:66;:::o;125:::-;181:2;174:6;:9;;;;125:66::o;273:80::-;313:4;339:6;;332:13;;273:80;:::o;7:139:1:-;53:5;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;7:139;;;;:::o;152:329::-;211:6;260:2;248:9;239:7;235:23;231:32;228:119;;;266:79;;:::i;:::-;228:119;386:1;411:53;456:7;447:6;436:9;432:22;411:53;:::i;:::-;401:63;;357:117;152:329;;;;:::o;487:118::-;574:24;592:5;574:24;:::i;:::-;569:3;562:37;487:118;;:::o;611:222::-;704:4;742:2;731:9;727:18;719:26;;755:71;823:1;812:9;808:17;799:6;755:71;:::i;:::-;611:222;;;;:::o;920:77::-;957:7;986:5;975:16;;920:77;;;:::o;1126:117::-;1235:1;1232;1225:12;1249:122;1322:24;1340:5;1322:24;:::i;:::-;1315:5;1312:35;1302:63;;1361:1;1358;1351:12;1302:63;1249:122;:::o",
-  "source": "//SPDX-License-Identifier: GPL-3.0\r\npragma solidity = 0.8.7;\r\n\r\ncontract Friday{ \r\n    \r\n    uint private Number = 0;\r\n\r\n    function storeDate() public {\r\n        \r\n        Number=99;\r\n    }\r\n\r\n    function storeData2(uint a) public {\r\n\r\n        Number = a;\r\n    }\r\n\r\n    function showData() public view returns(uint) {\r\n\r\n        return Number;\r\n    }\r\n}",
-  "sourcePath": "E:\\SHARED\\GitHub\\dApp-etherium-bootcamp\\dApp-example\\contracts\\friday.sol",
+  "sourceMap": "64:298:0:-:0;;;121:1;99:23;;64:298;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "64:298:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;205:66;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;131;;;:::i;:::-;;279:80;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;205:66;262:1;253:6;:10;;;;205:66;:::o;131:::-;187:2;180:6;:9;;;;131:66::o;279:80::-;319:4;345:6;;338:13;;279:80;:::o;7:139:1:-;53:5;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;7:139;;;;:::o;152:329::-;211:6;260:2;248:9;239:7;235:23;231:32;228:119;;;266:79;;:::i;:::-;228:119;386:1;411:53;456:7;447:6;436:9;432:22;411:53;:::i;:::-;401:63;;357:117;152:329;;;;:::o;487:118::-;574:24;592:5;574:24;:::i;:::-;569:3;562:37;487:118;;:::o;611:222::-;704:4;742:2;731:9;727:18;719:26;;755:71;823:1;812:9;808:17;799:6;755:71;:::i;:::-;611:222;;;;:::o;920:77::-;957:7;986:5;975:16;;920:77;;;:::o;1126:117::-;1235:1;1232;1225:12;1249:122;1322:24;1340:5;1322:24;:::i;:::-;1315:5;1312:35;1302:63;;1361:1;1358;1351:12;1302:63;1249:122;:::o",
+  "source": "//SPDX-License-Identifier: GPL-3.0\r\npragma solidity = 0.8.7;\r\n\r\ncontract theOtherProj{ \r\n    \r\n    uint private Number = 0;\r\n\r\n    function storeDate() public {\r\n        \r\n        Number=99;\r\n    }\r\n\r\n    function storeData2(uint a) public {\r\n\r\n        Number = a;\r\n    }\r\n\r\n    function showData() public view returns(uint) {\r\n\r\n        return Number;\r\n    }\r\n}",
+  "sourcePath": "E:\\SHARED\\GitHub\\dApp-etherium-bootcamp\\dApp-example\\another-example\\contracts\\theOtherProj.sol",
   "ast": {
-    "absolutePath": "project:/contracts/friday.sol",
+    "absolutePath": "project:/contracts/theOtherProj.sol",
     "exportedSymbols": {
-      "Friday": [
+      "theOtherProj": [
         31
       ]
     },
@@ -782,8 +783,8 @@
         "linearizedBaseContracts": [
           31
         ],
-        "name": "Friday",
-        "nameLocation": "73:6:0",
+        "name": "theOtherProj",
+        "nameLocation": "73:12:0",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -791,10 +792,10 @@
             "id": 4,
             "mutability": "mutable",
             "name": "Number",
-            "nameLocation": "106:6:0",
+            "nameLocation": "112:6:0",
             "nodeType": "VariableDeclaration",
             "scope": 31,
-            "src": "93:23:0",
+            "src": "99:23:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -805,7 +806,7 @@
               "id": 2,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "93:4:0",
+              "src": "99:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -820,7 +821,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "115:1:0",
+              "src": "121:1:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
                 "typeString": "int_const 0"
@@ -833,7 +834,7 @@
             "body": {
               "id": 11,
               "nodeType": "Block",
-              "src": "153:38:0",
+              "src": "159:38:0",
               "statements": [
                 {
                   "expression": {
@@ -848,7 +849,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "174:6:0",
+                      "src": "180:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -865,14 +866,14 @@
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "181:2:0",
+                      "src": "187:2:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_99_by_1",
                         "typeString": "int_const 99"
                       },
                       "value": "99"
                     },
-                    "src": "174:9:0",
+                    "src": "180:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -880,7 +881,7 @@
                   },
                   "id": 10,
                   "nodeType": "ExpressionStatement",
-                  "src": "174:9:0"
+                  "src": "180:9:0"
                 }
               ]
             },
@@ -890,22 +891,22 @@
             "kind": "function",
             "modifiers": [],
             "name": "storeDate",
-            "nameLocation": "134:9:0",
+            "nameLocation": "140:9:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "143:2:0"
+              "src": "149:2:0"
             },
             "returnParameters": {
               "id": 6,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "153:0:0"
+              "src": "159:0:0"
             },
             "scope": 31,
-            "src": "125:66:0",
+            "src": "131:66:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -914,7 +915,7 @@
             "body": {
               "id": 21,
               "nodeType": "Block",
-              "src": "234:31:0",
+              "src": "240:31:0",
               "statements": [
                 {
                   "expression": {
@@ -929,7 +930,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "247:6:0",
+                      "src": "253:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -943,13 +944,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 14,
-                      "src": "256:1:0",
+                      "src": "262:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "247:10:0",
+                    "src": "253:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -957,7 +958,7 @@
                   },
                   "id": 20,
                   "nodeType": "ExpressionStatement",
-                  "src": "247:10:0"
+                  "src": "253:10:0"
                 }
               ]
             },
@@ -967,7 +968,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "storeData2",
-            "nameLocation": "208:10:0",
+            "nameLocation": "214:10:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 15,
@@ -978,10 +979,10 @@
                   "id": 14,
                   "mutability": "mutable",
                   "name": "a",
-                  "nameLocation": "224:1:0",
+                  "nameLocation": "230:1:0",
                   "nodeType": "VariableDeclaration",
                   "scope": 22,
-                  "src": "219:6:0",
+                  "src": "225:6:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -992,7 +993,7 @@
                     "id": 13,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "219:4:0",
+                    "src": "225:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1001,16 +1002,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "218:8:0"
+              "src": "224:8:0"
             },
             "returnParameters": {
               "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "234:0:0"
+              "src": "240:0:0"
             },
             "scope": 31,
-            "src": "199:66:0",
+            "src": "205:66:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -1019,7 +1020,7 @@
             "body": {
               "id": 29,
               "nodeType": "Block",
-              "src": "319:34:0",
+              "src": "325:34:0",
               "statements": [
                 {
                   "expression": {
@@ -1028,7 +1029,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4,
-                    "src": "339:6:0",
+                    "src": "345:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1037,7 +1038,7 @@
                   "functionReturnParameters": 26,
                   "id": 28,
                   "nodeType": "Return",
-                  "src": "332:13:0"
+                  "src": "338:13:0"
                 }
               ]
             },
@@ -1047,13 +1048,13 @@
             "kind": "function",
             "modifiers": [],
             "name": "showData",
-            "nameLocation": "282:8:0",
+            "nameLocation": "288:8:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 23,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "290:2:0"
+              "src": "296:2:0"
             },
             "returnParameters": {
               "id": 26,
@@ -1067,7 +1068,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 30,
-                  "src": "313:4:0",
+                  "src": "319:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1078,7 +1079,7 @@
                     "id": 24,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "313:4:0",
+                    "src": "319:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1087,29 +1088,37 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "312:6:0"
+              "src": "318:6:0"
             },
             "scope": 31,
-            "src": "273:80:0",
+            "src": "279:80:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 32,
-        "src": "64:292:0",
+        "src": "64:298:0",
         "usedErrors": []
       }
     ],
-    "src": "36:320:0"
+    "src": "36:326:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xA522bE8457B3d0405aecfcd007Bf4DBB6D5071b3",
+      "transactionHash": "0x8d85f4991220b1ddfd65ad8f459a073b6aa97749e529d0adbb64d21ef18f3832"
+    }
+  },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-09-30T10:52:38.625Z",
+  "updatedAt": "2022-09-30T11:11:00.823Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
