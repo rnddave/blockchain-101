@@ -125,7 +125,42 @@ contract SimpleStorage {
 
 **Arrays** are pretty much the same in SOlidity as they are in other languages. 
 
+### Dynamic arrays
+
+Arrays we don't know the size of yet... 
+
+```solidity
+uint256 arrayName[]; // empty dynamic array
+```
+
+### Static Arrays
+
+Arrays that we want to defeine and control in size. 
+
+```solidity
+uint256 arrayName[3]; // empty statis array that will be limited to 3 entries
+```
+
+---
+
 **Structs** are a bit different. You can basiclly use it to define your own type
 
+```solidity
+
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18; // version 
+
+contract SimpleStorage {
 
 
+    struct Person {      // a struct, which on first glance looks like a dictionary or set
+        uint256 favNo;
+        string name;
+    }
+
+    Person public colin = Person(6, "Colin"); // one way to do this
+    Person public nolan = Person({favNo: 3, name: "Nolan"}); // or you can be very specific like this
+
+}
+```
+Obviously we don't want to keep pasting a new line for **Person** = welcome to arrays. 

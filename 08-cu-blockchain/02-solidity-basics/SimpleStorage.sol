@@ -5,12 +5,13 @@ contract SimpleStorage {
     uint256 myFavNo; // favNo initialised to 0
 
     struct Person {      // a struct, which on first glance looks like a dictionary or set
-        uint256 faveNo;
+        uint256 favNo;
         string name;
     }
 
-    Person public colin = Person(6, "Colin");
-    
+    Person public colin = Person(6, "Colin"); // one way to do this
+    Person public nolan = Person({favNo: 3, name: "Nolan"}); // or you can be very specific like this
+
     uint256[] listOfFavNo; // array, zero indexed
 
     function store(uint256 _favNo) public {
