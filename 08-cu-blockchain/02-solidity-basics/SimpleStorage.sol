@@ -9,10 +9,10 @@ contract SimpleStorage {
         string name;
     }
 
-    Person public colin = Person(6, "Colin"); // one way to do this
-    Person public nolan = Person({favNo: 3, name: "Nolan"}); // or you can be very specific like this
+    // Person public colin = Person(6, "Colin"); // one way to do this
+    // Person public nolan = Person({favNo: 3, name: "Nolan"}); // or you can be very specific like this
 
-    uint256[] listOfFavNo; // array, zero indexed
+    Person[] public listOfPeople; // array, zero indexed
 
     function store(uint256 _favNo) public {
         myFavNo = _favNo;
@@ -22,4 +22,8 @@ contract SimpleStorage {
         return myFavNo;
     }
 
+    function addPerson(string memory _name, uint256 _favNo) public {
+       
+        listOfPeople.push(Person(_favNo, _name));
+    }
 }
