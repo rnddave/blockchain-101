@@ -79,4 +79,53 @@ only visible internally
 
 --- 
 
+# State Mutability 
+
+This is why buttons are orange or blue in Remix... but what does it mean? 
+
+## View Functions
+
+This is a function that **promises** not to modify the state. 
+
+In fact you cannot modify the state from within a **view function**.
+
+## Pure Functions
+
+Functions can be marked **pure** which means they mprose not to view or modify the state. 
+
+    In particular, it should be possible to evaluate a pure function at compile-time given only its inputs and msg.data, but without any knowledge of the current blockchain state. 
+
+Example to consider: 
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18; // version 
+
+contract SimpleStorage {
+    uint256 public favNo; // favNo initialised to 0
+
+    function store(uint256 _favNo) public {
+        favNo = _favNo;
+    }
+
+    function retreive() public view returns (uint256) {
+        return favNo; // we are only returning the state, however, to do so, we have to first view the state, this is different from a pure function
+    }
+
+    function retreiveTwo() public pure returns (uint256) {
+        return 69; // in a pure function, we can also not read the state, therefore we'd just return a pre-defined value
+    }
+
+}
+```
+---
+
+# Arrays & Structs
+
+**Arrays** are pretty much the same in SOlidity as they are in other languages. 
+
+**Structs** are a bit different. You can basiclly use it to define your own type
+
+
 
