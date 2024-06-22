@@ -166,3 +166,105 @@ contract SimpleStorage {
 Obviously we don't want to keep pasting a new line for **Person** = welcome to arrays. 
 
 
+---
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18; // version 
+
+contract SimpleStorage {
+    uint256 myFavNo; // favNo initialised to 0
+
+    struct Person {      // a struct, which on first glance looks like a dictionary or set
+        uint256 favNo;
+        string name;
+    }
+
+    // Person public colin = Person(6, "Colin"); // one way to do this
+    // Person public nolan = Person({favNo: 3, name: "Nolan"}); // or you can be very specific like this
+
+    Person[] public listOfPeople; // array, zero indexed
+
+    function store(uint256 _favNo) public {
+        myFavNo = _favNo;
+    }
+
+    function retreive() public view returns (uint256) {
+        return myFavNo;
+    }
+
+    function addPerson(string memory _name, uint256 _favNo) public {
+       
+        listOfPeople.push(Person(_favNo, _name));
+    }
+}
+```
+
+---
+
+# Memory, Storage & Calldata
+
+## Calldata & Memory 
+
+- Temporary
+- Can only access it one time 
+- it existed in memory, once done, it's gone 
+
+### So if they both do this, why two? 
+
+- **memory**; can be re-assigned (change, manipulated, etc)
+
+```solidity
+
+function addPerson(string memory _name, uint256 _favNo) public {
+       
+        listOfPeople.push(Person(_favNo, _name));
+    }
+```
+
+- **calldata** can **not** be re-assigned 
+
+```solidity
+function addPerson(string calldata _name, uint256 _favNo) public {
+       
+        listOfPeople.push(Person(_favNo, _name));
+    }
+```
+
+## Storage
+
+- permanent variables that **can** be modifed
+- so can I do this: 
+
+```solidity
+function addPerson(string storage _name, uint256 _favNo) public {
+       
+        listOfPeople.push(Person(_favNo, _name));
+    }
+```
+
+Erm, nope. 
+
+Solidity is smart enough to know this is a function, and therefore this variable exists for the duration of the function and is therefore temporary, so you have to use **memory** or **calldata** in *this* case.
+
+---
+
+## Okay, why don't we define Storage, Memory, Calldata for integers? 
+
+- we only need to define the type of memory for some datatypes:
+  - **Array**
+  - **Struct**
+  - **Mapping**
+
+**uint, int** are **primative** data types, Solidity is smart enough to know where to put this variable in memory. 
+
+**NB** a **string** is basically an **array**, it is not it's own datatype in solidity
+
+---
+
+# Solidity Mappings
+
+larger arrays become complex when seeking content without knowing the index of the elements. 
+
+Mapping works for this. 
