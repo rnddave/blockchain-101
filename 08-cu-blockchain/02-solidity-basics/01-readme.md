@@ -268,3 +268,22 @@ Solidity is smart enough to know this is a function, and therefore this variable
 larger arrays become complex when seeking content without knowing the index of the elements. 
 
 Mapping works for this. 
+
+This allows us to create a map that links a name to their favourite number. 
+
+Ok, what does that mean... 
+
+At the moment if I have a **listOfPeople** with 10x people in it and I wanted to know what **David's** fav number was. I could go through the array one index at a time until I found the entry for **david** however, with 10 people this is a little wasteful in terms of resources such as time. Imagine instead that the arry has 10,000 people in it. Finding the favNo for *davidDickinsonW10* could be time consuming to the extreme. 
+
+This code: 
+
+```solidity
+
+    // mapping
+    mapping(string => uint256) public nameToFavNum;
+```
+
+effectvely says for every name, create a map to their favourite number, allowing us to instead search for the name rather the index. 
+
+**However**, *at least in the current format*, whilst multple entries with the same name can exist in the array, the mapping only recalls the most recent entity with that name.
+
